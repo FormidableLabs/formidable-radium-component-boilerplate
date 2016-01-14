@@ -43,6 +43,20 @@ From there you can see:
 * Demo app: [127.0.0.1:3000](http://127.0.0.1:3000/)
 * Client tests: [127.0.0.1:3001/test/client/test.html](http://127.0.0.1:3001/test/client/test.html)
 
+### Hot Reloading
+
+We use [`react-hot-loader`](https://github.com/gaearon/react-hot-loader#react-hot-loader-) to enable runtime-replacement of react components. This takes live reloading one step further by keeping the browser state intact and updating your component definition in-memory.
+
+```sh
+$ builder run hot       # hot reloading dev test/app server (OR)
+$ builder run open-hot  # hot reloading dev servers _and a browser window opens!_
+```
+
+From there you can see:
+
+* Demo app: [127.0.0.1:3000](http://127.0.0.1:3000/webpack-dev-server/)
+* Client tests: [127.0.0.1:3001/test/client/test.html](http://127.0.0.1:3001/test/client/test.html)
+
 
 ## Programming Guide
 
